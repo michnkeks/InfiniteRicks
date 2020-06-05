@@ -1,11 +1,17 @@
                           Multiverse Cryptocurrency InfiniteRicks
 
-Algorithm	Scrypt---- not anymore
 Type	PoS
+
 Coin name	InfiniteRicks
+
 Coin abbreviation	RICK
+
+
 Address letter	1
+
+
 RPC port	31648
+
 P2P port	31647
 
 
