@@ -1,4 +1,9 @@
-                          Multiverse Cryptocurrency InfiniteRicks
+![alt text](http://infiniteblocks.space/images/logo.png)  
+                
+                
+                
+                
+                           Multiverse Cryptocurrency InfiniteRicks
 
 Type	PoS
 
@@ -17,7 +22,7 @@ P2P port	31647
 
 
 Blockexplorer 
-http://infiniteblocks.com
+http://infiniteblocks.space
 
 
 
