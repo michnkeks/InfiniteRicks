@@ -14,6 +14,11 @@ Coin abbreviation	RICK
 
 Address letter	1
 
+Min stake age 12 Hours
+
+Block time 2 min
+
+APR  307% a year
 
 RPC port	31648
 
