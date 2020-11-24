@@ -29,6 +29,8 @@ P2P port	31647
 Blockexplorer 
 http://infiniteblocks.space
 
+Official Website 
+https://infinitericks.space/
 
 
 
