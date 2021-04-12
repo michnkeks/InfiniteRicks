@@ -47,21 +47,32 @@ Swapfile
 You can check if your server has a swap file already with the swapon command. If your system has less than 1.5GB of memory, you'll want at least a 2GB swap area. Add a new swapfile with:
 
 sudo fallocate -l 2G /swapfile
+
 sudo chown root:root /swapfile
+
 sudo chmod 0600 /swapfile
+
 sudo bash -c "echo 'vm.swappiness = 10' >> /etc/sysctl.conf"
+
 sudo mkswap /swapfile
+
 sudo swapon /swapfile
+
+
 
 If fallocate doesn’t work, you can instead use:
 
+
 sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024288
+
+
 
 Initialize the swapfile to mount automatically on boot:
 
 
 sudo echo '/swapfile none swap sw 0 0' >> /etc/fstab
-Install all required dependencies
+
+------------Install all required dependencies
 
 sudo apt-get -y install nano ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude
 
@@ -71,37 +82,55 @@ If you get an error mentioning lock files, you probably have a desktop or backgr
 
 Pull the source code from github, or download it yourself:
 
+
 git clone https://github.com/michnkeks/InfiniteRicks.git
+
+
 Compiling the software
 Now you compile the included leveldb:
 
 cd IVricks/src/leveldb
+
 chmod +x build_detect_platform
+
 make clean
+
 make libleveldb.a libmemenv.a
+
 Return to the source directory, and compile the daemon:
 
+
 cd ..
+
 make -f makefile.unix
+
+
 Strip the file to make it smaller, then relocate it:
 
 strip InfiniteRicksd
+
 sudo cp InfiniteRicksd /usr/bin
+
 Now run the daemon:
 
+
 InfiniteRicksd
+
 It should return an error, telling you to set up config file in a directory.
 
 Create a config file
 Now we’ll set up the config file. Note that this is case sensitive.
 
 nano ~/.InfiniteRicks/InfiniteRicks.conf
+
 Add the following, save and exit:
 
 daemon=1
 server=1
 rpcuser=(username)
 rpcpassword=(strong password)
+
+
 Run InfiniteRicksd once more and if you did everything correctly, your daemon is now online!
 
 Command summary
