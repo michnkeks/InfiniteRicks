@@ -89,7 +89,7 @@ git clone https://github.com/michnkeks/InfiniteRicks.git
 Compiling the software
 Now you compile the included leveldb:
 
-cd IVricks/src/leveldb
+cd InfiniteRicks/src/leveldb
 
 chmod +x build_detect_platform
 
@@ -126,8 +126,11 @@ nano ~/.InfiniteRicks/InfiniteRicks.conf
 Add the following, save and exit:
 
 daemon=1
+
 server=1
+
 rpcuser=(username)
+
 rpcpassword=(strong password)
 
 
