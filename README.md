@@ -136,6 +136,40 @@ rpcpassword=(strong password)
 
 Run InfiniteRicksd once more and if you did everything correctly, your daemon is now online!
 
+config file example including addnodes
+
+------------------------------------------------
+
+daemon=1
+
+server=1
+
+rpcuser=username324324
+
+rpcpassword=password12345
+
+
+addnode=149.28.22.228
+addnode=94.54.153.10
+addnode=188.226.37.51
+addnode=105.103.165.35
+addnode=77.21.248.144
+addnode=85.95.188.181
+addnode=5.142.175.33
+addnode=95.90.227.52
+addnode=45.179.196.39
+addnode=31.41.98.108
+addnode=103.107.198.214
+addnode=76.187.164.207
+addnode=46.71.118.51
+addnode=31.220.54.64
+
+
+--------------------------------------------
+
+
+
+
 Command summary
 Type:
 
