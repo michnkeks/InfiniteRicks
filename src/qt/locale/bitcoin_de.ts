@@ -3220,7 +3220,7 @@ for example: alertnotify=echo %%s | mail -s &quot;InfiniteRicks Alert&quot; admi
     <message>
         <location line="+122"/>
         <source>Unable to bind to %s on this computer. InfiniteRicks is probably already running.</source>
-        <translation>Fehler beim anbinden %s auf diesem Computer. BlaclCoin Client läuft wahrscheinlich bereits.</translation>
+        <translation>Fehler beim anbinden %s auf diesem Computer. InfiniteRicks Client läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <location line="-97"/>
